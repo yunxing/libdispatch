@@ -467,7 +467,7 @@ dispatch_get_global_queue(long priority, unsigned long flags)
 		return NULL;
 	}
 	return _dispatch_get_root_queue(priority,
-			flags & DISPATCH_QUEUE_OVERCOMMIT);
+					DISPATCH_QUEUE_OVERCOMMIT);
 }
 
 dispatch_queue_t
